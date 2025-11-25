@@ -1,15 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Version>1.0.0</Version>
+  <PropertyGroup Label="Main">
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>CA1860;CS1573;CS1587;CS1591;IDE0130</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Label="Package">
+    <Version>1.1.0</Version>
     <Authors>DCoats</Authors>
-    <Company>Rivet</Company>
-    <Copyright>Copyright (c) Rivet 2025</Copyright>
-    <Description>--- ADD DESCRIPTION ---</Description>
+    <Company>Functionairy</Company>
+    <Copyright>Copyright (c) Functionairy 2025</Copyright>
+    <Description>Microsoft.EntityFrameworkCore.SqlServer NuGet package selector.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/Functionairy/F10Y.NG0016.git</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.22" />
+  </ItemGroup>
 </Project>
